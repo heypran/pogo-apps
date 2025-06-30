@@ -11,11 +11,13 @@ export default function About() {
             <h1 className="text-4xl font-bold text-gray-900 mb-8">About Us</h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-gray-600 mb-6">
-                Welcome to our GitHub Pages application! This is a demo Next.js app built with TypeScript
-                and deployed automatically using GitHub Actions.
+                Welcome to our GitHub Pages application! This is a demo Next.js
+                app built with TypeScript and deployed automatically using
+                GitHub Actions.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                This application showcases modern web development practices including:
+                This application showcases modern web development practices
+                including:
               </p>
               <ul className="text-left list-disc list-inside text-gray-600 space-y-2 max-w-md mx-auto">
                 <li>Next.js 15 with App Router</li>

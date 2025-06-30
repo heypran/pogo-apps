@@ -12,8 +12,8 @@ export default function Home() {
               Welcome to GitHub Pages App
             </h1>
             <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-              A modern Next.js application built with TypeScript, deployed automatically 
-              to GitHub Pages using GitHub Actions.
+              A modern Next.js application built with TypeScript, deployed
+              automatically to GitHub Pages using GitHub Actions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -21,7 +21,8 @@ export default function Home() {
                   Next.js 15
                 </h3>
                 <p className="text-gray-600">
-                  Built with the latest Next.js features including App Router and TypeScript support.
+                  Built with the latest Next.js features including App Router
+                  and TypeScript support.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -29,7 +30,8 @@ export default function Home() {
                   GitHub Actions
                 </h3>
                 <p className="text-gray-600">
-                  Automated deployment pipeline that builds and deploys to GitHub Pages on every push.
+                  Automated deployment pipeline that builds and deploys to
+                  GitHub Pages on every push.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -37,7 +39,8 @@ export default function Home() {
                   TypeScript
                 </h3>
                 <p className="text-gray-600">
-                  Full TypeScript support with proper linting and formatting for better code quality.
+                  Full TypeScript support with proper linting and formatting for
+                  better code quality.
                 </p>
               </div>
             </div>
