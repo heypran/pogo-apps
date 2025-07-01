@@ -114,9 +114,9 @@ export default function Home() {
                       AI Basics
                     </h3>
                     <p className="text-gray-400 mb-4 leading-relaxed">
-                      Interactive learning platform teaching AI fundamentals, 
-                      LLMs, agents, and frameworks with visual explanations 
-                      and progress tracking.
+                      Interactive learning platform teaching AI fundamentals,
+                      LLMs, agents, and frameworks with visual explanations and
+                      progress tracking.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">
@@ -164,7 +164,8 @@ export default function Home() {
               Other Projects
             </h2>
             <p className="text-gray-400 text-center mb-12 max-w-3xl mx-auto">
-              Beyond AI experiments, exploring web3 development, blockchain technology, and sharing insights through technical writing.
+              Beyond AI experiments, exploring web3 development, blockchain
+              technology, and sharing insights through technical writing.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -266,12 +267,16 @@ export default function Home() {
                           </span>
                         </div>
                         <p className="text-gray-400 mb-6 leading-relaxed">
-                          Sharing thoughts and insights on AI, technology trends, development experiences, and the intersection of human creativity with artificial intelligence.
+                          Sharing thoughts and insights on AI, technology
+                          trends, development experiences, and the intersection
+                          of human creativity with artificial intelligence.
                         </p>
-                        
+
                         <div className="grid grid-cols-1 gap-4 mb-6">
                           <div>
-                            <h4 className="text-white font-semibold mb-2 text-sm">📝 Writing Topics</h4>
+                            <h4 className="text-white font-semibold mb-2 text-sm">
+                              📝 Writing Topics
+                            </h4>
                             <ul className="text-gray-400 text-sm space-y-1">
                               <li>• AI & Machine Learning Insights</li>
                               <li>• Development Best Practices</li>
@@ -280,7 +285,7 @@ export default function Home() {
                             </ul>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-wrap gap-2">
                           <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-xs rounded-full">
                             Technical Writing
