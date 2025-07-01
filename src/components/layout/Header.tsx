@@ -32,6 +32,12 @@ export default function Header() {
             >
               Time Flow
             </Link>
+            <Link
+              href="/ai-basics"
+              className="text-gray-300 hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            >
+              AI Basics
+            </Link>
           </div>
         </div>
       </nav>
