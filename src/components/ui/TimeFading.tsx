@@ -176,6 +176,61 @@ export default function TimeFallingAway() {
           </div>
         </div>
 
+        {/* Text components above the tank */}
+        <div className="text-center mb-6 lg:mb-8">
+          <div className="flex justify-between text-sm lg:text-base mb-4 lg:mb-6 max-w-sm lg:max-w-md xl:max-w-lg mx-auto">
+            <div
+              className={isShowingToday ? 'text-orange-400' : 'text-red-400'}
+            >
+              <span className="block font-semibold text-lg lg:text-xl">
+                {percentage}%
+              </span>
+              <span className="text-gray-400 text-xs lg:text-sm">
+                {isShowingToday ? 'Day Gone' : 'Time Gone'}
+              </span>
+            </div>
+            <div className="text-center text-gray-300">
+              <span className="block text-sm lg:text-base font-medium">
+                {isShowingToday ? 'Today Tank' : 'Life Tank'}
+              </span>
+              <span className="text-xs lg:text-sm">Watch it drain...</span>
+            </div>
+            <div
+              className={isShowingToday ? 'text-yellow-400' : 'text-blue-400'}
+            >
+              <span className="block font-semibold text-lg lg:text-xl">
+                {100 - percentage}%
+              </span>
+              <span className="text-gray-400 text-xs lg:text-sm">
+                Remaining
+              </span>
+            </div>
+          </div>
+
+          {isShowingToday && (
+            <div className="mb-4 lg:mb-6 p-3 lg:p-4 bg-gray-800/50 rounded-lg border border-orange-500/30 max-w-sm lg:max-w-md xl:max-w-lg mx-auto">
+              <div className="text-center text-sm lg:text-base">
+                <div className="text-orange-400 font-mono mb-1 lg:mb-2 text-lg lg:text-xl">
+                  {getFormattedNumber(remaining)} seconds left today
+                </div>
+                <div className="text-xs lg:text-sm text-gray-400">
+                  {Math.floor(remaining / 3600)}h{' '}
+                  {Math.floor((remaining % 3600) / 60)}m {remaining % 60}s
+                  remaining
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className="text-xs lg:text-sm text-gray-500 mb-4 lg:mb-6">
+            💧{' '}
+            {isShowingToday
+              ? 'Each droplet represents seconds of today flowing away'
+              : 'Each droplet represents seconds flowing away forever'}
+          </div>
+        </div>
+
+        {/* Tank visual below the text */}
         <div className="relative mx-auto max-w-sm lg:max-w-md xl:max-w-lg">
           <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 rounded-lg h-64 sm:h-80 lg:h-96 xl:h-[28rem] overflow-hidden">
             <div
@@ -261,51 +316,6 @@ export default function TimeFallingAway() {
                 }}
               ></div>
             ))}
-          </div>
-
-          <div className="flex justify-between mt-3 lg:mt-6 text-sm lg:text-base">
-            <div
-              className={isShowingToday ? 'text-orange-400' : 'text-red-400'}
-            >
-              <span className="block font-semibold">{percentage}%</span>
-              <span className="text-gray-400">
-                {isShowingToday ? 'Day Gone' : 'Time Gone'}
-              </span>
-            </div>
-            <div className="text-center text-gray-300">
-              <span className="block text-xs">
-                {isShowingToday ? 'Today Tank' : 'Life Tank'}
-              </span>
-              <span className="text-xs">Watch it drain...</span>
-            </div>
-            <div
-              className={isShowingToday ? 'text-yellow-400' : 'text-blue-400'}
-            >
-              <span className="block font-semibold">{100 - percentage}%</span>
-              <span className="text-gray-400">Remaining</span>
-            </div>
-          </div>
-
-          {isShowingToday && (
-            <div className="mt-3 lg:mt-6 p-3 lg:p-4 bg-gray-800/50 rounded-lg border border-orange-500/30">
-              <div className="text-center text-sm lg:text-base">
-                <div className="text-orange-400 font-mono mb-1 lg:mb-2">
-                  {getFormattedNumber(remaining)} seconds left today
-                </div>
-                <div className="text-xs text-gray-400">
-                  {Math.floor(remaining / 3600)}h{' '}
-                  {Math.floor((remaining % 3600) / 60)}m {remaining % 60}s
-                  remaining
-                </div>
-              </div>
-            </div>
-          )}
-
-          <div className="text-center mt-3 lg:mt-6 text-xs lg:text-sm text-gray-500">
-            💧{' '}
-            {isShowingToday
-              ? 'Each droplet represents seconds of today flowing away'
-              : 'Each droplet represents seconds flowing away forever'}
           </div>
         </div>
       </div>
